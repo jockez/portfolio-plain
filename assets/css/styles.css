@@ -10,6 +10,8 @@
     4.1 Buttons
     4.2 Inputs
 
+
+5.  Animations    
 */
 
 /*  ================
@@ -72,40 +74,6 @@ body {
 .btn.outline-neon:hover {
     -webkit-animation: glow 1s infinite ease-in-out;
     animation: glow 1s infinite ease-in-out;
-}
-
-@-webkit-keyframes glow {
-    0% {
-        -webkit-box-shadow: 0 0 100px 0 #24FF00;
-        box-shadow: 0 0 10px 0 #24FF00;
-    }
-
-    50% {
-        -webkit-box-shadow: 0 0 12px 0 #24FF00;
-        box-shadow: 0 0 12px 0 #24FF00;
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 100px 0 #24FF00;
-        box-shadow: 0 0 10px 0 #24FF00;
-    }
-}
-
-@keyframes glow {
-    0% {
-        -webkit-box-shadow: 0 0 100px 0 #24FF00;
-        box-shadow: 0 0 10px 0 #24FF00;
-    }
-
-    50% {
-        -webkit-box-shadow: 0 0 12px 0 #24FF00;
-        box-shadow: 0 0 12px 0 #24FF00;
-    }
-
-    100% {
-        -webkit-box-shadow: 0 0 100px 0 #24FF00;
-        box-shadow: 0 0 10px 0 #24FF00;
-    }
 }
 
 /*  ================
@@ -209,3 +177,86 @@ footer {
 }
 
 /*  4.2 Inputs  */
+
+/*  4.3 Active Link  */
+.active-link {
+    border-bottom: 2px solid var(--main-theme-color);
+    -webkit-box-shadow: 0 8px 10px -10px var(--main-theme-color);
+    box-shadow: 0 8px 10px -10px var(--main-theme-color);
+}
+
+
+.active-link:hover {
+    -webkit-animation: glow-link 1s infinite ease-in-out;
+    animation: glow-link 1s infinite ease-in-out;
+}
+
+
+/* 5. Animations */
+@-webkit-keyframes glow {
+    0% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 12px 0 #24FF00;
+        box-shadow: 0 0 12px 0 #24FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+}
+
+@keyframes glow {
+    0% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 12px 0 #24FF00;
+        box-shadow: 0 0 12px 0 #24FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+}
+
+@-webkit-keyframes glow-link {
+    0% {
+        -webkit-box-shadow: 0 5px 10px -10px var(--main-theme-color);
+        box-shadow: 0 5px 10px -10px var(--main-theme-color);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 9px 11px -11px var(--main-theme-color);
+        box-shadow: 0 9px 11px -11px var(--main-theme-color);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 5px 10px -10px var(--main-theme-color);
+        box-shadow: 0 5px 10px -10px var(--main-theme-color);
+    }
+}
+
+@keyframes glow-link {
+    0% {
+        -webkit-box-shadow: 0 5px 10px -10px var(--main-theme-color);
+        box-shadow: 0 5px 10px -10px var(--main-theme-color);
+    }
+
+    50% {
+        -webkit-box-shadow: 0 9px 11px -11px var(--main-theme-color);
+        box-shadow: 0 9px 11px -11px var(--main-theme-color);
+    }
+
+    100% {
+        -webkit-box-shadow: 0 5px 10px -10px var(--main-theme-color);
+        box-shadow: 0 5px 10px -10px var(--main-theme-color);
+    }
+}
