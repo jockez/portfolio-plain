@@ -179,17 +179,11 @@ nav>a:last-child {
     margin: auto;
 }
 
-.projects-section {
-    max-width: 75%;
-    margin: auto;
-}
+
 
 /*  ================
       4.Components
       ================  */
-.hero-section {}
-
-
 .hero-sub-text {
     margin-bottom: .5em;
 }
