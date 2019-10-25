@@ -69,6 +69,45 @@ body {
     box-shadow: 0 0 10px 0 #24FF00;
 }
 
+.btn.outline-neon:hover {
+    -webkit-animation: glow 1s infinite ease-in-out;
+    animation: glow 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 12px 0 #24FF00;
+        box-shadow: 0 0 12px 0 #24FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+}
+
+@keyframes glow {
+    0% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+
+    50% {
+        -webkit-box-shadow: 0 0 12px 0 #24FF00;
+        box-shadow: 0 0 12px 0 #24FF00;
+    }
+
+    100% {
+        -webkit-box-shadow: 0 0 100px 0 #24FF00;
+        box-shadow: 0 0 10px 0 #24FF00;
+    }
+}
+
 /*  ================
       2. Typography
       ================  */
@@ -170,3 +209,106 @@ footer {
 }
 
 /*  4.2 Inputs  */
+
+/*  ================
+      2. Typography
+      ================  */
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-heading-color);
+}*/
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p,
+header,
+footer,
+nav>a {
+    padding: 1em;
+}
+
+header>nav>a,
+.btn-cta {
+    font-size: 24px;
+}
+
+.hero-text {
+    font-size: 64px;
+}
+
+.hero-sub-text {
+    font-size: 32px;
+    color: var(--secondary-text-color);
+}
+
+/*  ================
+      3. Layout
+      ================  */
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*  ================
+      4.Components
+      ================  */
+.hero-section {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+header,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header {
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: var(--main-color-dark);
+    bottom: 0;
+    font-size: 18px;
+}
+
+/*  4.1 Buttons  */
+.btn {
+    padding: .5em 2em;
+    background-color: transparent;
+}
+
+/*  4.2 Inputs  */
+}
