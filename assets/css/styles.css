@@ -8,8 +8,7 @@
 
 4.  Components
     4.1 Buttons
-    4.2 Inputs
-
+    4.2 Active Link
 
 5.  Animations    
 */
@@ -105,6 +104,17 @@ header>nav>a,
     font-size: 24px;
 }
 
+header>nav>a,
+.btn {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header>nav>a:hover,
+.btn:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
 .hero-text {
     font-size: 64px;
 }
@@ -176,21 +186,17 @@ footer {
     background-color: transparent;
 }
 
-/*  4.2 Inputs  */
-
-/*  4.3 Active Link  */
+/*  4.2 Active Link  */
 .active-link {
     border-bottom: 2px solid var(--main-theme-color);
     -webkit-box-shadow: 0 8px 10px -10px var(--main-theme-color);
     box-shadow: 0 8px 10px -10px var(--main-theme-color);
 }
 
-
 .active-link:hover {
     -webkit-animation: glow-link 1s infinite ease-in-out;
     animation: glow-link 1s infinite ease-in-out;
 }
-
 
 /* 5. Animations */
 @-webkit-keyframes glow {
