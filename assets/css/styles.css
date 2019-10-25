@@ -17,11 +17,11 @@
     ================ */
 
 :root {
-    --main-theme-color: rgb(38, 107, 38);
+    --main-theme-color: #24FF00;
     --main-text-color: #FFF;
     --main-color-dark: rgb(39, 39, 39);
     --main-color-dark-lighter: rgb(56, 56, 56);
-    --secondary-text-color: rgba(255, 255, 255, 0.8);
+    --secondary-text-color: rgba(255, 255, 255, .8);
 }
 
 /*
@@ -63,6 +63,12 @@ body {
     background-position: center center;
 }
 
+.btn.outline-neon {
+    border: 2px solid var(--main-theme-color);
+    -webkit-box-shadow: 0 0 10px 0 #24FF00;
+    box-shadow: 0 0 10px 0 #24FF00;
+}
+
 /*  ================
       2. Typography
       ================  */
@@ -87,7 +93,8 @@ nav>a {
     padding: 1em;
 }
 
-header>nav>a {
+header>nav>a,
+.btn-cta {
     font-size: 24px;
 }
 
@@ -157,5 +164,9 @@ footer {
 }
 
 /*  4.1 Buttons  */
+.btn {
+    padding: .5em 2em;
+    background-color: transparent;
+}
 
 /*  4.2 Inputs  */
