@@ -18,7 +18,8 @@
 
     for (let i = 0; i < closeBtns.length; i++) {
         closeBtns[i].addEventListener("click", function () {
-            const modalId = overlay.childNodes[1].id;
+            //const modalId = overlay.childNodes[1].id;
+            const modalId = closeBtns[i].parentNode.parentNode.parentNode.id;
             modal = document.getElementById(modalId);
 
             // Add hidden class to modal and overlay
