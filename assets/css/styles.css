@@ -264,12 +264,19 @@ footer {
 
 /*  4.3 Projects grid  */
 .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .5fr .5fr;
-    -webkit-column-gap: 5em;
-    column-gap: 5em;
-    row-gap: 5em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.projects-section {
+    width: 100%;
 }
 
 /*  4.4 Project Container  */
@@ -277,8 +284,10 @@ footer {
     border: 2px solid var(--main-theme-color);
     -webkit-box-shadow: 0 0 10px 0 #24FF00;
     box-shadow: 0 0 10px 0 #24FF00;
-    max-width: 20em;
     background-color: var(--main-color-dark);
+    width: 47.5%;
+    height: 300px;
+    margin: 0em;
 }
 
 .project-overlay {
