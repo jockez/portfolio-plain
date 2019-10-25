@@ -146,7 +146,7 @@ h4,
     margin-bottom: .5em;
 }
 
-#portfolio-modal {
+.modal {
     color: var(--secondary-text-color);
 }
 
@@ -381,20 +381,21 @@ aside>button:hover {
     background-color: rgba(0, 0, 0, .75);
 }
 
-#portfolio-modal {
+.modal {
     width: 60em;
     height: 25em;
     background-color: var(--main-color-dark);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 999;
 }
 
-#portfolio-modal>article {
+.modal>article {
     padding: 1em;
     position: relative;
 }
 
-#portfolio-modal>article:last-child {
+.modal>article:last-child {
     background-color: var(--main-color-dark-lighter);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -408,7 +409,7 @@ aside>button:hover {
     justify-content: space-between;
 }
 
-#portfolio-modal>article>aside {
+.modal>article>aside {
     position: absolute;
     top: 1em;
     right: 1em;
@@ -419,6 +420,9 @@ aside>button:hover {
     max-height: 150px;
 }
 
+.modal-hero-img {
+    max-width: 100%;
+}
 
 /* 5. Animations */
 @-webkit-keyframes glow {
