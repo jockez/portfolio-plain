@@ -9,6 +9,8 @@
 4.  Components
     4.1 Buttons
     4.2 Active Link
+    4.3 Projects grid
+    4.4 Project Container
 
 5.  Animations    
 */
@@ -49,7 +51,8 @@
 html,
 body,
 main,
-main article {
+main article,
+.projects-grid {
     width: 100%;
     height: 100%;
 }
@@ -217,6 +220,23 @@ footer {
 .active-link:hover {
     -webkit-animation: glow-link 1s infinite ease-in-out;
     animation: glow-link 1s infinite ease-in-out;
+}
+
+/*  4.3 Projects grid  */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -webkit-column-gap: 5px;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+/*  4.4 Project Container  */
+.project-container {
+    border: 2px solid var(--main-theme-color);
+    -webkit-box-shadow: 0 0 10px 0 #24FF00;
+    box-shadow: 0 0 10px 0 #24FF00;
 }
 
 /* 5. Animations */
