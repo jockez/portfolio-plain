@@ -99,9 +99,8 @@ h1 {
 }
 
 .project-heading {
-    font-size: 18px;
+    font-size: 24px;
     color: var(--main-text-color);
-    padding: 1em;
 }
 
 .projects-section>h1 {
@@ -247,7 +246,9 @@ footer {
     transform: scale(1.05);
 }
 
-
+.project-overlay>.btn {
+    margin: 1em;
+}
 
 /*  4.2 Active Link  */
 .active-link {
@@ -278,6 +279,18 @@ footer {
     box-shadow: 0 0 10px 0 #24FF00;
     max-width: 20em;
     background-color: var(--main-color-dark);
+}
+
+.project-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.project-overlay:hover {
+    opacity: 1;
 }
 
 /* 5. Animations */
