@@ -382,6 +382,7 @@ aside>button:hover {
 }
 
 .modal {
+    position: absolute;
     width: 60em;
     height: 25em;
     background-color: var(--main-color-dark);
