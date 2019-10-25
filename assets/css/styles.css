@@ -278,6 +278,8 @@ footer {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
 }
 
 .project-container {
