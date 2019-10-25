@@ -103,11 +103,21 @@ a {
     color: inherit;
 }
 
-p,
 header,
-footer,
-nav>a {
+footer {
     padding: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+nav>a {
+    margin: 1em;
+}
+
+nav>a:last-child {
+    margin: 0;
 }
 
 .hero-section {
@@ -139,6 +149,7 @@ header>nav>a:hover {
 
 .hero-sub-text {
     font-size: 32px;
+    padding: 1em;
     color: var(--secondary-text-color);
 }
 
@@ -149,10 +160,6 @@ header>nav>a:hover {
 /*  ================
       3. Layout
       ================  */
-nav>a:last-child {
-    padding-right: 0;
-}
-
 .flex-center {
     display: -webkit-box;
     display: -ms-flexbox;
