@@ -259,6 +259,19 @@ footer {
     transform: scale(1.05);
 }
 
+aside>button {
+    padding: .5em;
+    background-color: transparent;
+    border: none;
+    color: white;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+aside>button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 /*  4.2 Active Link  */
 .active-link {
     border-bottom: 2px solid var(--main-theme-color);
@@ -303,6 +316,37 @@ footer {
 .project-container>img {
     max-width: 100%;
 }
+
+/* Modal */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#portfolio-modal {
+    width: 60em;
+    height: 25em;
+    background-color: var(--main-color-dark);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#portfolio-modal>article {
+    padding: 1em;
+    position: relative;
+}
+
+#portfolio-modal>article>aside {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+
 
 /* 5. Animations */
 @-webkit-keyframes glow {
