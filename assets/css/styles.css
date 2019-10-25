@@ -9,8 +9,8 @@
 4.  Components
     4.1 Buttons
     4.2 Active Link
-    4.3 Projects grid
-    4.4 Project Container
+    4.3 Projects section
+    4.4 Modal
 
 5.  Animations    
 */
@@ -80,6 +80,11 @@ button {
 .btn.outline-neon:hover {
     -webkit-animation: glow 1s infinite ease-in-out;
     animation: glow 1s infinite ease-in-out;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 
 /*  ================
@@ -284,6 +289,7 @@ aside>button:hover {
     animation: glow-link 1s infinite ease-in-out;
 }
 
+/*  4.3 Project section  */
 .projects-section {
     width: 100%;
 }
@@ -317,7 +323,7 @@ aside>button:hover {
     max-width: 100%;
 }
 
-/* Modal */
+/* 4.4 Modal */
 #modal-overlay {
     position: fixed;
     top: 0;
