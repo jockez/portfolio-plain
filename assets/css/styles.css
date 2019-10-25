@@ -75,9 +75,15 @@ h6 {
   color: var(--main-heading-color);
 }*/
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p,
 header,
-footer {
+footer,
+nav>a {
     padding: 1em;
 }
 
@@ -119,8 +125,6 @@ footer {
     text-align: center;
 }
 
-
-
 header,
 footer {
     position: absolute;
@@ -130,6 +134,16 @@ footer {
 
 header {
     top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 footer {
