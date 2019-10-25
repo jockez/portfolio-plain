@@ -87,6 +87,10 @@ nav>a {
     padding: 1em;
 }
 
+header>nav>a {
+    font-size: 24px;
+}
+
 .hero-text {
     font-size: 64px;
 }
