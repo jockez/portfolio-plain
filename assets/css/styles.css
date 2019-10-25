@@ -1,0 +1,118 @@
+/*  Table of contents
+
+1.  Global styles
+
+2.  Typography
+
+3.  Layout
+
+4.  Components
+    4.1 Buttons
+    4.2 Inputs
+
+*/
+
+/*  ================
+    1. Global styles
+    ================ */
+
+:root {
+    --main-theme-color: rgb(38, 107, 38);
+    --main-text-color: #FFF;
+    --main-color-dark: rgb(39, 39, 39);
+    --main-color-dark-lighter: rgb(56, 56, 56);
+    --secondary-text-color: rgba(255, 255, 255, 0.8);
+}
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #333;
+    --main-theme-color: rgb(88, 216, 88);
+    --main-text-color: rgb(231, 231, 231);
+    --main-heading-color: rgb(202, 202, 202);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Same as default */
+/*}*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+main,
+main section {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-color-dark)), to(var(--main-color-dark-lighter)));
+    background-image: linear-gradient(var(--main-color-dark), var(--main-color-dark-lighter));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*  ================
+      2. Typography
+      ================  */
+/*h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-heading-color);
+}*/
+.hero-text {
+    font-size: 64px;
+}
+
+.hero-sub-text {
+    font-size: 32px;
+    color: var(--secondary-text-color);
+}
+
+/*  ================
+      3. Layout
+      ================  */
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*  ================
+      4.Components
+      ================  */
+
+footer {
+    background-color: var(--main-color-dark);
+}
+
+
+
+/*  4.1 Buttons  */
+
+/*  4.2 Inputs  */
