@@ -85,6 +85,7 @@ button {
 .hidden {
     display: none;
     visibility: hidden;
+    pointer-events: none;
 }
 
 /*  ================
@@ -99,13 +100,54 @@ h6 {
   color: var(--main-heading-color);
 }*/
 
-h1 {
+.main-text-color {
+    color: var(--main-text-color);
+}
+
+.secondary-text-color {
+    color: var(--secondary-text-color);
+}
+
+h1,
+h3 {
     font-size: 32px;
 }
 
-button {
-    color: var(--main-text-color);
+ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+ul>li {
+    padding: .5em;
+    margin: .3em;
+    border: 2px solid var(--main-color-dark);
+    font-size: 12px;
+}
+
+button,
+.project-modal-type {
     font-size: 18px;
+}
+
+h4,
+.project-modal-type {
+    font-weight: bold;
+}
+
+.project-modal-type {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+#portfolio-modal {
+    color: var(--secondary-text-color);
 }
 
 .project-heading {
@@ -126,6 +168,7 @@ a {
 header,
 footer {
     padding: 1em;
+    z-index: -1;
 }
 
 p {
@@ -214,7 +257,9 @@ header>nav>a:hover {
     margin: auto;
 }
 
-
+.mb-05 {
+    margin-bottom: .5em;
+}
 
 /*  ================
       4.Components
@@ -265,16 +310,20 @@ footer {
 }
 
 aside>button {
-    padding: .5em;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-weight: bold;
     background-color: transparent;
     border: none;
-    color: white;
+    color: var(--main-text-color);
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
 
 aside>button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--secondary-text-color);
 }
 
 /*  4.2 Active Link  */
@@ -346,12 +395,30 @@ aside>button:hover {
     position: relative;
 }
 
+#portfolio-modal>article:last-child {
+    background-color: var(--main-color-dark-lighter);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
 #portfolio-modal>article>aside {
     position: absolute;
     top: 1em;
     right: 1em;
 }
 
+.about-text-container {
+    overflow-y: auto;
+    max-height: 150px;
+}
 
 
 /* 5. Animations */
