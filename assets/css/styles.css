@@ -51,7 +51,7 @@
 html,
 body,
 main,
-.projects-grid {
+.projects-container {
     width: 100%;
     height: 100%;
 }
@@ -98,6 +98,11 @@ h1 {
     font-size: 32px;
 }
 
+button {
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
 .project-heading {
     font-size: 24px;
     color: var(--main-text-color);
@@ -110,7 +115,7 @@ h1 {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--main-text-color);
 }
 
 header,
@@ -167,6 +172,10 @@ header>nav>a:hover {
     width: 18em;
 }
 
+.project-container>p {
+    color: var(--secondary-text-color);
+}
+
 /*  ================
       3. Layout
       ================  */
@@ -184,6 +193,10 @@ header>nav>a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.width-100 {
+    width: 100%;
 }
 
 .width-75 {
@@ -246,10 +259,6 @@ footer {
     transform: scale(1.05);
 }
 
-.project-overlay>.btn {
-    margin: 1em;
-}
-
 /*  4.2 Active Link  */
 .active-link {
     border-bottom: 2px solid var(--main-theme-color);
@@ -262,44 +271,21 @@ footer {
     animation: glow-link 1s infinite ease-in-out;
 }
 
-/*  4.3 Projects grid  */
-.projects-grid {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-}
-
 .projects-section {
     width: 100%;
 }
 
-/*  4.4 Project Container  */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .project-container {
-    border: 2px solid var(--main-theme-color);
-    -webkit-box-shadow: 0 0 10px 0 #24FF00;
-    box-shadow: 0 0 10px 0 #24FF00;
-    background-color: var(--main-color-dark);
-    width: 47.5%;
-    height: 300px;
-    margin: 0em;
-}
-
-.project-overlay {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
-}
-
-.project-overlay:hover {
-    opacity: 1;
+    background-color: var(--main-color-dark-lighter);
+    border: 2px solid var(--main-color-dark);
+    -webkit-box-shadow: 0 0 5px -2px var(--main-color-dark);
+    box-shadow: 0 0 5px -2px var(--main-color-dark);
+    padding: 1em;
 }
 
 /* 5. Animations */
