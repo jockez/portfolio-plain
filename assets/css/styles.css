@@ -74,6 +74,13 @@ h5,
 h6 {
   color: var(--main-heading-color);
 }*/
+
+p,
+header,
+footer {
+    padding: 1em;
+}
+
 .hero-text {
     font-size: 64px;
 }
@@ -106,12 +113,30 @@ h6 {
 /*  ================
       4.Components
       ================  */
-
-footer {
-    background-color: var(--main-color-dark);
+.hero-section {
+    width: 30%;
+    margin: auto;
+    text-align: center;
 }
 
 
+
+header,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    background-color: var(--main-color-dark);
+    bottom: 0;
+    font-size: 18px;
+}
 
 /*  4.1 Buttons  */
 
