@@ -309,16 +309,14 @@ footer {
     background-color: transparent;
 }
 
-button.btn:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+button {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
 }
 
-a.btn-cta:hover {
-    padding: .75em 3em;
+.btn:hover {
+    padding: .5em 3em;
 }
-
-
 
 .modal-btn {
     padding: .5em 2em;
