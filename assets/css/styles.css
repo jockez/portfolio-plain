@@ -168,7 +168,6 @@ a {
 header,
 footer {
     padding: 1em;
-    z-index: -1;
 }
 
 p {
@@ -269,7 +268,7 @@ header>nav>a:hover {
 }
 
 header {
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
