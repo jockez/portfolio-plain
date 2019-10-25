@@ -309,10 +309,16 @@ footer {
     background-color: transparent;
 }
 
-.btn:hover {
+button.btn:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
+
+a.btn-cta:hover {
+    padding: .75em 3em;
+}
+
+
 
 .modal-btn {
     padding: .5em 2em;
@@ -328,12 +334,6 @@ aside>button {
     background-color: transparent;
     border: none;
     color: var(--main-text-color);
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-aside>button:hover {
-    color: var(--secondary-text-color);
 }
 
 /*  4.2 Active Link  */
