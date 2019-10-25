@@ -110,8 +110,7 @@ header>nav>a,
     transition: all .3s ease;
 }
 
-header>nav>a:hover,
-.btn:hover {
+header>nav>a:hover {
     color: rgba(255, 255, 255, .8);
 }
 
@@ -184,6 +183,11 @@ footer {
 .btn {
     padding: .5em 2em;
     background-color: transparent;
+}
+
+.btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /*  4.2 Active Link  */
