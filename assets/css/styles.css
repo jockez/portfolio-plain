@@ -138,6 +138,10 @@ ul>li {
     font-size: 12px;
 }
 
+figcaption {
+    padding: 0 1em;
+}
+
 button,
 .project-modal-type {
     font-size: 18px;
