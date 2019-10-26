@@ -1,6 +1,7 @@
     btns = document.getElementsByClassName('btn');
     closeBtns = document.getElementsByClassName('close-btn');
     overlay = document.getElementById('modal-overlay');
+    images = document.getElementsByClassName('modal-gallery-img');
 
 
     for (let i = 0; i < btns.length; i++) {
@@ -25,5 +26,21 @@
             // Add hidden class to modal and overlay
             modal.classList.add("hidden");
             overlay.classList.add("hidden");
+        });
+    }
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener("click", function () {
+            const caption = images[i].dataset.caption;
+            const imgContainer = images[i].parentNode.parentNode;
+            const heroImgs = imgContainer.getElementsByClassName('modal-hero-img');
+            const captionEls = imgContainer.getElementsByTagName('figcaption');
+
+            if (caption && captionEls && heroImgs) {
+                heroImgs[0].src = images[i].src;
+                captionEls[0].innerHTML = caption;
+            }
+
+            // Parent parent child childfigcaption
         });
     }

@@ -68,7 +68,7 @@ html {
 }
 
 button,
-modal-gallery-img {
+.modal-gallery-img {
     cursor: pointer;
 }
 
