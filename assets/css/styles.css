@@ -67,7 +67,8 @@ html {
     background-position: center center;
 }
 
-button {
+button,
+modal-gallery-img {
     cursor: pointer;
 }
 
@@ -405,13 +406,10 @@ aside>button {
     z-index: 999;
 }
 
-.modal>article {
-    padding: 1em;
-    position: relative;
-}
-
 .modal>article:last-child {
     background-color: var(--main-color-dark-lighter);
+    padding: 1em;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -437,6 +435,33 @@ aside>button {
 
 .modal-hero-img {
     max-width: 100%;
+}
+
+.modal-images-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.modal-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.modal-gallery-img {
+    width: 50%;
 }
 
 /* 5. Animations */
