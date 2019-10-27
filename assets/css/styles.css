@@ -160,7 +160,7 @@ h4,
 }
 
 .modal {
-    color: var(--secondary-text-color);
+    /*color: var(--secondary-text-color);*/
 }
 
 .project-heading {
@@ -229,10 +229,6 @@ header>nav>a:hover {
 
 .hero-section>.hero-sub-text {
     width: 18em;
-}
-
-.project-container>p {
-    color: var(--secondary-text-color);
 }
 
 /*  ================
