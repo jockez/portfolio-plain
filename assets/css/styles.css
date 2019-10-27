@@ -435,6 +435,7 @@ aside>button {
 .about-text-container {
     overflow-y: auto;
     max-height: 150px;
+    line-height: 1.5em;
 }
 
 .modal-hero-img {
