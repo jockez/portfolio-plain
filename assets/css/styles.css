@@ -336,6 +336,11 @@ aside>button {
     color: var(--main-text-color);
 }
 
+.disabled {
+    cursor: no-drop;
+    opacity: .8;
+}
+
 /*  4.2 Active Link  */
 .active-link {
     border-bottom: 2px solid var(--main-theme-color);
