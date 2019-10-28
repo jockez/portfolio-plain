@@ -78,7 +78,8 @@ button,
     box-shadow: 0 0 10px 0 #24FF00;
 }
 
-.btn.outline-neon:hover {
+.btn.outline-neon:hover,
+.btn.outline-neon:focus {
     -webkit-animation: glow 1s infinite ease-in-out;
     animation: glow 1s infinite ease-in-out;
 }
@@ -212,7 +213,8 @@ header>nav>a,
     transition: all .3s ease;
 }
 
-header>nav>a:hover {
+header>nav>a:hover,
+header>nav>a:focus {
     color: rgba(255, 255, 255, .8);
 }
 
@@ -317,7 +319,8 @@ button {
     align-self: flex-start;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     padding: .5em 3em;
 }
 
@@ -354,7 +357,8 @@ aside>button {
     box-shadow: 0 8px 10px -10px var(--main-theme-color);
 }
 
-.active-link:hover {
+.active-link:hover,
+.active-link:focus {
     -webkit-animation: glow-link 1s infinite ease-in-out;
     animation: glow-link 1s infinite ease-in-out;
 }
