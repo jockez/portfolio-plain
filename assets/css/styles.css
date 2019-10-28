@@ -117,7 +117,7 @@ h6 {
 
 h1,
 h3 {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 ul {
@@ -137,16 +137,22 @@ ul>li {
     padding: .5em;
     margin: .3em;
     border: 2px solid var(--main-color-dark);
-    font-size: 12px;
+    /*font-size: 12px;*/
+    font-size: 0.75rem;
 }
 
 figcaption {
     padding: 0 1em;
 }
 
-button,
+button {
+    /*font-size: 18px;*/
+    font-size: 1.15rem;
+}
+
 .project-modal-type {
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1rem;
 }
 
 h4,
@@ -157,11 +163,6 @@ h4,
 .project-modal-type {
     margin: 0;
     margin-bottom: .5em;
-}
-
-.project-heading {
-    font-size: 24px;
-    color: var(--main-text-color);
 }
 
 .projects-section>h1 {
@@ -201,7 +202,8 @@ nav>a:last-child {
 
 header>nav>a,
 .btn-cta {
-    font-size: 24px;
+    /*font-size: 24px;*/
+    font-size: 1.5rem;
 }
 
 header>nav>a,
@@ -215,11 +217,13 @@ header>nav>a:hover {
 }
 
 .hero-text {
-    font-size: 64px;
+    /*font-size: 64px;*/
+    font-size: 4rem;
 }
 
 .hero-sub-text {
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 2rem;
     padding: 1em;
 }
 
@@ -293,7 +297,8 @@ header {
 
 footer {
     background-color: var(--main-color-dark);
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1rem;
 }
 
 .project-hero-img {
@@ -326,7 +331,8 @@ button {
 }
 
 aside>button {
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1rem;
     margin: 0;
     padding: 0;
     line-height: 0;
