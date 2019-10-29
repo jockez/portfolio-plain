@@ -67,7 +67,7 @@ html {
     background-position: center center;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: .8rem;
     }
@@ -97,7 +97,7 @@ button,
 }
 
 .hidden {
-    display: none;
+    display: none !important;
     visibility: hidden;
     pointer-events: none;
 }
@@ -278,11 +278,12 @@ header>nav>a:focus {
     margin: auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
 
     .width-50,
     .width-75 {
         width: 100%;
+        padding: 1rem;
     }
 }
 
@@ -306,6 +307,12 @@ header {
     left: 0;
     right: 0;
     top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-header {
+        position: relative;
+    }
 }
 
 header {
@@ -395,8 +402,22 @@ aside>button {
 .projects-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     -webkit-column-gap: 1em;
     column-gap: 1em;
+}
+
+@media screen and (max-width: 576px) {
+
+    .projects-section {
+        min-height: 100%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+        grid-template-rows: auto;
+    }
 }
 
 .project-container {
