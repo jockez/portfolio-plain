@@ -313,6 +313,12 @@ header {
     .portfolio-header {
         position: relative;
     }
+
+    main.flex-center {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
 }
 
 header {
