@@ -397,6 +397,7 @@ aside>button {
 /*  4.3 Project section  */
 .projects-section {
     width: 100%;
+    z-index: 9;
 }
 
 .projects-container {
@@ -450,6 +451,7 @@ aside>button {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, .75);
+    z-index: 99;
 }
 
 .modal {
@@ -461,6 +463,7 @@ aside>button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 999;
+    overflow: auto;
 }
 
 .modal>article:last-child {
@@ -483,6 +486,43 @@ aside>button {
     position: absolute;
     top: 1em;
     right: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+    .modal {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .modal {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 1em;
+    }
+
+    .modal>article {
+        height: 50%;
+    }
+
+    .modal>article:last-child {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .modal>article {
+        height: 100%;
+    }
 }
 
 .about-text-container {
