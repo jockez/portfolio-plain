@@ -67,6 +67,12 @@ html {
     background-position: center center;
 }
 
+@media screen and (max-width: 576px) {
+    html {
+        font-size: .8rem;
+    }
+}
+
 button,
 .modal-gallery-img {
     cursor: pointer;
@@ -233,6 +239,12 @@ header>nav>a:focus {
     width: 18em;
 }
 
+@media screen and (max-width: 576px) {
+    .hero-section>.hero-sub-text {
+        width: 100%;
+    }
+}
+
 /*  ================
       3. Layout
       ================  */
@@ -266,6 +278,14 @@ header>nav>a:focus {
     margin: auto;
 }
 
+@media screen and (max-width: 576px) {
+
+    .width-50,
+    .width-75 {
+        width: 100%;
+    }
+}
+
 .mb-05 {
     margin-bottom: .5em;
 }
@@ -273,6 +293,10 @@ header>nav>a:focus {
 /*  ================
       4.Components
       ================  */
+.brand-img {
+    height: 4rem;
+}
+
 .hero-sub-text {
     margin-bottom: .5em;
 }
