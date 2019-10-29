@@ -3,7 +3,6 @@
     overlay = document.getElementById('modal-overlay');
     images = document.getElementsByClassName('modal-gallery-img');
 
-
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function () {
             const project = btns[i].dataset.project;
@@ -40,7 +39,5 @@
                 heroImgs[0].src = images[i].src;
                 captionEls[0].innerHTML = caption;
             }
-
-            // Parent parent child childfigcaption
         });
     }
