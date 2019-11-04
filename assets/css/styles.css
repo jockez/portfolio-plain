@@ -195,6 +195,12 @@ nav>a {
     margin: 1em;
 }
 
+@media screen and (max-width: 768px) {
+    nav>a {
+        margin: .5em;
+    }
+}
+
 nav>a:last-child {
     margin: 0;
 }
@@ -401,7 +407,8 @@ aside>button {
 }
 
 /*  4.3 Project section  */
-.projects-section {
+.projects-section,
+.contact-section {
     width: 100%;
     z-index: 9;
 }
@@ -566,6 +573,27 @@ aside>button {
 
 .modal-gallery-img {
     width: 50%;
+}
+
+.form-input {
+    margin: 1rem 0;
+}
+
+.form-input>* {
+    display: block;
+}
+
+.form-input>input,
+.form-input>textarea {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 1em;
+    border: none;
+    font-size: 1rem;
+    color: var(--main-color-dark);
 }
 
 /* 5. Animations */
