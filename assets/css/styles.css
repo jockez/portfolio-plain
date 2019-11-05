@@ -56,7 +56,7 @@ main,
     height: 100%;
 }
 
-html {
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-text-color);
     background-image: -webkit-gradient(linear, left top, left bottom, from(var(--main-color-dark)), to(var(--main-color-dark-lighter)));
@@ -73,21 +73,39 @@ html {
     }
 }
 
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
 button,
 .modal-gallery-img {
     cursor: pointer;
 }
 
-.btn.outline-neon {
+.btn.outline-neon,
+.contact-input.outline-neon {
     border: 2px solid var(--main-theme-color);
     -webkit-box-shadow: 0 0 10px 0 #24FF00;
     box-shadow: 0 0 10px 0 #24FF00;
 }
 
 .btn.outline-neon:hover,
-.btn.outline-neon:focus {
+.btn.outline-neon:focus,
+.contact-input.outline-neon:focus {
     -webkit-animation: glow 1s infinite ease-in-out;
     animation: glow 1s infinite ease-in-out;
+}
+
+.contact-input:invalid {
+    border: 2px solid red;
+    -webkit-box-shadow: 0 0 10px 0 red;
+    box-shadow: 0 0 10px 0 red;
+}
+
+.contact-input:focus {
+    border: 2px solid var(--main-theme-color);
 }
 
 .modal-outline-neon {
@@ -586,6 +604,7 @@ aside>button {
 .form-input>input,
 .form-input>textarea {
     width: 100%;
+    background-color: transparent;
 }
 
 input,
