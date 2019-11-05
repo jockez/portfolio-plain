@@ -22,7 +22,7 @@
             </nav>
         </header>
         <article id="modal-overlay" class="flex-center hidden">
-            <section id="portfolio-modal" class="hidden modal">
+            <section id="portfolio-modal" class="hidden modal" aria-modal="true">
                 <article class="modal-images-container">
                     <figure>
                         <img class="modal-hero-img" src="assets/images/portfolio_landing.PNG" alt="Time management app">
@@ -36,7 +36,7 @@
                     </div>
                 </article>
                 <article>
-                    <aside><button class="close-btn">x</button></aside>
+                    <aside><button class="close-btn" aria-label="Close modal">x</button></aside>
                     <div>
                         <p class="project-modal-type secondary-text-color">Project</p>
                         <h3 class="main-text-color">Portfolio</h3>
@@ -65,7 +65,7 @@
                     </div>
                 </article>
             </section>
-            <section id="time-tracking-modal" class="hidden modal">
+            <section id="time-tracking-modal" class="hidden modal" aria-modal="true">
                 <article class="modal-images-container">
                     <figure>
                         <img class="modal-hero-img" src="assets/images/time_tracking.PNG" alt="Time tracking app">
@@ -79,7 +79,7 @@
                     </div>
                 </article>
                 <article>
-                    <aside><button class="close-btn">x</button></aside>
+                    <aside><button class="close-btn" aria-label="Close modal">x</button></aside>
                     <div>
                         <p class="project-modal-type secondary-text-color">Project</p>
                         <h3 class="main-text-color">Time tracking</h3>
@@ -115,7 +115,7 @@
                     </div>
                 </article>
             </section>
-            <section id="chat-app-modal" class="hidden modal">
+            <section id="chat-app-modal" class="hidden modal" aria-modal="true">
                 <article class="modal-images-container">
                     <figure>
                         <img class="modal-hero-img" src="assets/images/chat.PNG" alt="Chat app">
@@ -129,7 +129,7 @@
                     </div>
                 </article>
                 <article>
-                    <aside><button class="close-btn">x</button></aside>
+                    <aside><button class="close-btn" aria-label="Close modal">x</button></aside>
                     <div>
                         <p class="project-modal-type secondary-text-color">Project</p>
                         <h3 class="main-text-color">Chat app</h3>
@@ -166,21 +166,24 @@
                         <h2>Portfolio</h2>
                         <img src="assets/images/portfolio_landing.PNG" alt="Portfolio landing page">
                         <p class="secondary-text-color">My portfolio, this website.</p>
-                        <button class="btn outline-neon main-text-color" data-project="portfolio">View
+                        <button class="btn outline-neon main-text-color" data-project="portfolio"
+                            aria-label="Open modal, project portfolio">View
                             project</button>
                     </article>
                     <article class="project-container">
                         <h2>Time tracking</h2>
                         <img src="assets/images/time_tracking.PNG" alt="Time tracking app">
                         <p class="secondary-text-color">Angular + PWA + Firebase === Sweet music?</p>
-                        <button class="btn outline-neon main-text-color" data-project="time-tracking">View
+                        <button class="btn outline-neon main-text-color" data-project="time-tracking"
+                            aria-label="Open modal, project time tracking">View
                             project</button>
                     </article>
                     <article class="project-container">
                         <h2>Real-time chat app</h2>
                         <img src="assets/images/chat.PNG" alt="Real time chat app">
                         <p class="secondary-text-color">Stay social, chat with your friends!</p>
-                        <button class="btn outline-neon main-text-color" data-project="chat-app">View
+                        <button class="btn outline-neon main-text-color" data-project="chat-app"
+                            aria-label="Open modal, project real-time chat app">View
                             project</button>
                     </article>
                 </section>
