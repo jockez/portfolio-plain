@@ -229,8 +229,9 @@ nav>a:last-child {
     text-align: center;
 }
 
-.projects-section>p {
-    padding: 1em 0;
+.projects-section>p,
+.contact-section>p {
+    padding-bottom: 2em;
 }
 
 header>nav>a,
