@@ -489,13 +489,19 @@ aside>button {
     display: block;
     position: absolute;
     width: 45%;
-    min-width: 50em;
+
     height: 25em;
     background-color: var(--main-color-dark);
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 999;
     overflow: auto;
+}
+
+@media screen and (min-width: 769px) {
+    .modal {
+        min-width: 50em;
+    }
 }
 
 .modal>article:last-child {
