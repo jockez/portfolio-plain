@@ -89,6 +89,8 @@ button,
     border: 2px solid var(--main-theme-color);
     -webkit-box-shadow: 0 0 10px 0 #24FF00;
     box-shadow: 0 0 10px 0 #24FF00;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .btn.outline-neon:hover,
