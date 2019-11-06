@@ -28,7 +28,7 @@
             <article class="contact-section">
                 <h1>Get in touch</h1>
                 <p class="secondary-text-color">Have something to say? Let me know what you think!</p>
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                     <div class="form-input">
                         <label for="email">Email*</label>
                         <input class="secondary-text-color contact-input outline-neon" id="email" type="email"
@@ -39,6 +39,7 @@
                         <textarea class="secondary-text-color contact-input outline-neon" id="message" type="message"
                             aria-label="Contact form, your message" rows="3" required></textarea>
                     </div>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="btn outline-neon main-text-color" type="submit"
                         aria-label="Send message">Send!</button>
                 </form>
