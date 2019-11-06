@@ -488,7 +488,8 @@ aside>button {
 .modal {
     display: block;
     position: absolute;
-    width: 60em;
+    width: 45%;
+    min-width: 50em;
     height: 25em;
     background-color: var(--main-color-dark);
     display: grid;
