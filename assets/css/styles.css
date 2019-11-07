@@ -625,6 +625,10 @@ textarea {
     color: var(--main-color-dark);
 }
 
+#captcha {
+    margin: 1em 0;
+}
+
 /* 5. Animations */
 @-webkit-keyframes glow {
     0% {
