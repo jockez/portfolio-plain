@@ -170,6 +170,7 @@ ul>li {
 
 figcaption {
     padding: 0 1em;
+    margin-bottom: 1em;
 }
 
 button {
@@ -491,9 +492,7 @@ aside>button {
 .modal {
     display: block;
     position: absolute;
-    width: 45%;
-
-    height: 25em;
+    width: 50%;
     background-color: var(--main-color-dark);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -570,6 +569,7 @@ aside>button {
     overflow-y: auto;
     max-height: 150px;
     line-height: 1.5em;
+    margin: 1em 0;
 }
 
 .modal-hero-img {
